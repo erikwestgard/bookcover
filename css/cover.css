@@ -1,0 +1,98 @@
+
+@font-face {
+	font-family: 'thick';
+	src: url("../fonts/Lexend-Black.ttf");
+}
+
+@font-face {
+	font-family: 'thin';
+	src: url("../fonts/Lexend-ExtraLight.ttf");
+}
+
+
+.cover {
+	width: 500px;
+	height: 750px;
+	background: lightskyblue;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.sky {
+	width: 500px;
+	height: 250px;
+	background: floralwhite;
+	position: relative;
+	bottom: 500px;
+	overflow: hidden;
+}
+
+.water {
+	width: 500px;
+	height: 500px;
+	background: linear-gradient(lightblue, darkblue);
+	position: relative;
+	top: 250px;
+	overflow: hidden;
+}
+
+.title {
+	font-family: 'thick';
+	font-size: 120px;
+	color: midnightblue;
+	position: relative;
+	left: 0px;
+	top: -32px;
+	text-align: center;
+	opacity: 90%;
+}
+
+.fin {
+	width: 0px;
+	height: 0px;
+	border-top: 200px solid transparent;
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+	border-bottom: 150px solid gray;
+	position: relative;
+	left: 131.749px;
+	top: 13px;
+	animation: swim 18s infinite cubic-bezier(.5,0,.5,1);
+	animation-delay: 5s;
+}
+
+
+@keyframes swim {
+	0% {left: 131.749px;}
+	20% { left: 400px }
+	45% { left: -15px }
+	65% {left: 131.749px;}
+	100% {left: 131.749px;}
+	
+}
+
+
+
+.author {
+	font-family: 'thin';
+	font-size: 80px;
+	color: orangered;
+	position: relative;
+	bottom: -286px;
+	left: -3px;
+	text-align: center;
+	letter-spacing: -4px;
+}
+
+
+
+
+
+
+
+
